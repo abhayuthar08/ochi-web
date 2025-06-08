@@ -1,127 +1,86 @@
-import React from 'react'
+import React from 'react';
 
 function Reviews() {
+  const reviewList = [
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+    { client: 'Planteny', reviewer: 'Nina Wannoch' },
+  ];
+
   return (
-    <div className='text-black'>
-        <h1 className='text-black text-[3vw] pl-[2vw] '>Client's reviews</h1>
+    <div className="text-black px-[3vw] py-[4vw]">
+      {/* Title */}
+      <h1 className="text-[3vw] font-semibold mb-[2vw]">Client's Reviews</h1>
 
-        <div className='border-[1px] mt-[5vw] flex'></div>
+      {/* Top Divider */}
+      <div className="border border-zinc-300 my-[2vw]" />
 
-        <div className='flex gap-80'>
-            <h3>Karman Ventures</h3>
-            <h3>Services</h3>
-            <h3>William Barnes:</h3>
-            <h3 className='pl-[11vw]'>READ</h3>
+      {/* Top Review Summary */}
+      <div className="flex justify-between items-center text-lg font-medium mb-[1vw]">
+        <h3>Karman Ventures</h3>
+        <h3>Services</h3>
+        <h3>William Barnes</h3>
+        <h3 className="text-blue-700 cursor-pointer">READ</h3>
+      </div>
+
+      {/* Highlighted Review */}
+      <div className="flex flex-col lg:flex-row gap-[4vw] py-[3vw]">
+        {/* Tags */}
+        <div className="flex flex-col gap-[1vw] justify-center items-center">
+          <span className="border border-zinc-500 rounded-full px-[1.5vw] py-[0.5vw] text-sm">
+            BRAND IDENTITY
+          </span>
+          <span className="border border-zinc-500 rounded-full px-[1.5vw] py-[0.5vw] text-sm">
+            BRAND STRATEGY
+          </span>
         </div>
 
-        <div className='flex gap-5'>
-
-
-            <div className='pt-[8vw] pl-[28vw]'>
-            <h1 className='border border-[1px] border-zinc-500 rounded-full inline-block pl-[1vw] pr-[1vw] align-middle justify-center'>BRAND IDENTITY</h1><br />
-
-            <h1 className='border border-[1px] border-zinc-500 mt-[1vw] rounded-full inline-block pl-[1vw] pr-[1vw] align-middle justify-center'>BRAND IDENTITY</h1>
-
-            </div>
-
-            <div className='pt-[8vw] px-[14vw]  '>
-
-               <div>
-               <img className='h-[10vw] rounded-full' src="img5.png" alt="" />
-               </div>
-
-               <div className='w-[28vw] pt-[3vw]'>
-                <p>They were transparent about the time and the stages of the project. The end product is high quality, and I feel confident about how they were handholding the client through the process. I feel like I can introduce them to someone who needs to put a sales deck together from scratch, and they would be able to handhold the client experience from 0 to 100 very effectively from story to design. 5/5</p>
-               </div>
-
-            </div>
-
-        
+        {/* Image + Text */}
+        <div className="flex flex-col items-center lg:flex-row gap-[2vw]">
+          <img src="img5.png" alt="Reviewer" className="h-[10vw] w-[10vw] rounded-full object-cover" />
+          <p className="max-w-[40vw] text-md text-zinc-700">
+            They were transparent about the time and the stages of the project. The end product is
+            high quality, and I feel confident about how they were handholding the client through
+            the process. I feel like I can introduce them to someone who needs to put a sales deck
+            together from scratch, and they would be able to handhold the client experience from 0
+            to 100 very effectively from story to design. 5/5
+          </p>
         </div>
+      </div>
 
-        <div>
+      {/* Section Divider */}
+      <div className="border border-zinc-300 my-[2vw]" />
 
-        <div className='border-[1px] border-zinc-500 mt-[3vw]'></div>
+      {/* Multiple Client Reviews */}
+      <div className="space-y-[1.5vw]">
+        {reviewList.map((review, idx) => (
+          <div key={idx} className="border-b border-zinc-300 py-[1vw] flex justify-between items-center">
+            <h3>{review.client}</h3>
+            <h3>{review.reviewer}</h3>
+            <h3 className="text-blue-700 cursor-pointer">READ</h3>
+          </div>
+        ))}
+      </div>
 
-        <div>
-            <div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-        </div>
-
-        <div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-<div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-<div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-<div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-<div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-<div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-<div className='flex justify-between'> 
-<h3 className='pl-[2vw]'>Planteny</h3>
-<h3 className='pl-[12vw]'>Nina Wannoch</h3>
-<h3 className='pr-[4vw]'>READ</h3></div>
-<div className='border-[1px] border-zinc-500 mt-[1vw]'></div>
-
-
-
-
-        </div>
-
-        
-
-        <div className='flex'>
-        <div className='w-[45vw] h-[30vw] mt-[5vw] ml-[5vw]  bg-[#38543a] align-centre justify-center pt-[11vw] rounded-md pl-[10vw] text-[#9ad622] text-[5vw]'>
+      {/* Ochi Cards Section */}
+      <div className="flex flex-wrap justify-center gap-[2vw] mt-[5vw]">
+        <div className="w-[28vw] h-[20vw] bg-[#38543a] rounded-md flex items-center justify-center text-[#9ad622] text-[3vw] font-bold shadow-md">
           Ochi
         </div>
-        <div className='w-[35vw] h-[30vw] mt-[5vw] ml-[5vw]  bg-[#3e3854] align-centre justify-center pt-[11vw] rounded-md pl-[10vw] text-[#9ad622] text-[5vw]'>
+        <div className="w-[28vw] h-[20vw] bg-[#3e3854] rounded-md flex items-center justify-center text-[#9ad622] text-[3vw] font-bold shadow-md">
           Ochi
-        </div> <div className='w-[35vw] h-[30vw] mt-[5vw] ml-[5vw]  bg-[#6d4b53] align-centre justify-center pt-[11vw] rounded-md pl-[10vw] text-[#9ad622] text-[5vw]'>
+        </div>
+        <div className="w-[28vw] h-[20vw] bg-[#6d4b53] rounded-md flex items-center justify-center text-[#9ad622] text-[3vw] font-bold shadow-md">
           Ochi
         </div>
       </div>
-        
-
-
     </div>
-  )
+  );
 }
 
-export default Reviews
+export default Reviews;

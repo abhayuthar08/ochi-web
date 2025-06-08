@@ -10,7 +10,7 @@ function LandingPage() {
                   <div className='w-fit flex items-end overflow-hidden'>
 
                     {index === 1 && (
-                      <div className='mr-[1vw] w-[8vw] h-[5vw] bg-[url("content-image01.jpg")] rounded bg-cover'>
+                      <div className='mr-[1vw] w-[8vw] h-[5vw] bg-[url("https://plus.unsplash.com/premium_photo-1676422355165-d809008b8342?q=80&w=1998&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")] rounded bg-cover'>
                         </div>
                     )}
               

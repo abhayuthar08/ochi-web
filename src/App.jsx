@@ -6,6 +6,8 @@ import About from './components/About'
 import Cards from './components/Cards'
 import Reviews from './components/Reviews'
 import Eyes from './components/Eyes'
+import Footer from './components/Footer'
+
 
 
 
@@ -21,6 +23,7 @@ function App() {
     <Cards/>
     <Eyes/>
     <Reviews/>
+    <Footer></Footer>
    </div>
   )
 }

@@ -9,7 +9,7 @@ function Cards() {
 
         <div className='flex px-[5vw] mt-[5vw] gap-[1vw] rounded'> 
             <div>
-            <div className='flex '><img src="img1.png" alt="" /></div>
+            <div className='flex '><img src="https://i.pinimg.com/736x/e7/47/33/e747333492631fea6674188e73952731.jpg" alt="" /></div>
                
             <div className='flex gap-5 mt-[1vw] '>
             <h1 className='border border-[1px] pl-[1vw] pr-[1vw] border-zinc-500 rounded-full align-middle justify-center'>AUDIT</h1>
@@ -20,7 +20,7 @@ function Cards() {
             </div>
 
             <div>
-            <div className=''><img src="img2.jpg" alt="" /></div>
+            <div className=''><img src="https://i.pinimg.com/736x/db/38/84/db388461a59a36c505661cd25a2ed015.jpg"/></div>
             <div className='flex gap-5 mt-[1vw]'>
                 <h1 className='border border-[1px] border-zinc-500 rounded-full align-middle justify-center pl-[1vw] pr-[1vw]'>AGENCY</h1>
             <h1 className='border border-[1px] border-zinc-500 rounded-full align-middle justify-center pl-[1vw] pr-[1vw]'>COMPANY PRESENTATION</h1></div>
@@ -31,7 +31,7 @@ function Cards() {
 
         <div className='flex px-[5vw] mt-[5vw] gap-[1vw] rounded'> 
             <div>
-            <div className='flex '><img src="img3.jpg" alt="" /></div>
+            <div className='flex '><img src="https://i.pinimg.com/736x/54/45/71/5445710a1bbab0b6cb5632dc667d070a.jpg" alt="" /></div>
                
             <div className='flex gap-5 mt-[1vw] '>
             <h1 className='border border-[1px] border-zinc-500 pl-[1vw] pr-[1vw] rounded-full align-middle justify-center'>BRAND IDENTITY</h1>
@@ -42,7 +42,7 @@ function Cards() {
             </div>
 
             <div>
-            <div className=''><img src="img4.png" alt="" /></div>
+            <div className=''><img src="https://i.pinimg.com/736x/84/4b/a4/844ba45870609582bc36d7d741b71a10.jpg" alt="" /></div>
             <div className='flex gap-5 mt-[1vw]'>
                 <h1 className='border border-[1px] border-zinc-500 rounded-full align-middle justify-center pl-[1vw] pr-[1vw]'>BRAND TEMPLATE</h1>
             </div>

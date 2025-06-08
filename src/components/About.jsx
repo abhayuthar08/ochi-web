@@ -33,7 +33,7 @@ We believe the mix of strategy and design (with a bit of coffee) is what makes y
         </div>
 
         <div>
-          <img className='h-[35vw] w-[45vw] rounded pr-[2vw] ' src='about.jpg' alt="" />
+          <img className='h-[35vw] w-[45vw] rounded pr-[2vw] ' src='https://images.pexels.com/photos/845457/pexels-photo-845457.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2' alt="" />
         </div>
       </div>
 
